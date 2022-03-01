@@ -8,13 +8,37 @@ href="css/my-first-stylesheet.css">
 <body>
 <h1>Cooking</h1>
 <p><img src="https://static.emilehenry.com/866705-thickbox_default/dinner-plate.jpg"
-alt="Lettuce pic"/></p>
-<button name="button" value="OK" type="button" onclick="addLettuce()">Add Lettuce</button>
-<script>
-function addLettuce(){
-alert("This part is not ready yet, please do not click the button anymore");
-}
-</script>
+alt="plate"/></p>
+<style>
+ 
+        /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div>
+ 
+        <!-- Add id to image -->
+        <img id="image" src="https://www.qualityassurancemag.com/fileuploads/image/2018/11/26/romaine-lettuce-pixabay2468495_1280.png?w=736&h=414&mode=crop"alt="Lettuce" />
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="btnID">
+        Add lettuce
+    </button>
+ 
+    <script>
+        function show() {
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
 <nav>
 <ol>
 <li><a href="about-us.html">About Us</a></li>

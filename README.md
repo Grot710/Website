@@ -1,2 +1,4 @@
 # Website
-Download every html file and download the my first stylesheet in the css folder
+Download from the link below:
+
+https://tinyurl.com/grot710website-download
